@@ -22,11 +22,9 @@ type User {
 
 type Book {
     bookId: String!
-    // this is coming from googles book api
     authors: [String]
     title: String
     description: String
-    title: String
     image: String
     link: String
 }
@@ -34,6 +32,14 @@ type Book {
 type Auth {
     token: ID!
     user: User
+}
+
+input InputBook {
+    authors: [String]
+    title: String
+    description: String
+    image: String
+    link: String
 }
 `;
 

@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import {
-  // Jumbotron,
   Container,
   Col,
   Form,
@@ -24,15 +23,8 @@ const SearchBooks = () => {
 
   useEffect(() => {
     return () => saveBookIds(savedBookIds);
-  });
-  // create state for holding returned google api data
-  // create state for holding our search field data
-  // create state to hold saved bookId values
-  // set up useEffect hook to save `savedBookIds` list to localStorage on component unmount
-  // learn more here: https://reactjs.org/docs/hooks-effect.html#effects-with-cleanup
+  })
 
-
-  // create method to search for books and set state on form submit
   const handleFormSubmit = async (event) => {
     event.preventDefault();
 

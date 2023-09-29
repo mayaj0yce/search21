@@ -1,7 +1,7 @@
 import { gql } from '@apollo/client';
 
 export const LOGIN_USER = gql`
-    mutations login(
+    mutation login(
         $email: String!
         $password: String!
     ) {
@@ -32,16 +32,7 @@ export const ADD_USER = gql`
             token
             user {
                 _id
-                email
-                bookCount
-                savedBooks {
-                    bookId
-                    authors
-                    description
-                    title
-                    image
-                    link
-                }
+               username
             }
         }
     }
@@ -84,7 +75,3 @@ export const REMOVE_BOOK = gql`
     }
 `;
 
-
-// module.exports = { LOGIN_USER, ADD_USER, SAVE_BOOK, REMOVE_BOOK }
-
-// I could have set this up with export const for each instead of const and then export at the bottom. This makes more sense for me and I am able to keep this cleaner
