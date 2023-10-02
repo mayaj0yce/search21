@@ -3,7 +3,6 @@ AS AN avid reader
 I WANT to search for new books to read
 SO THAT I can keep a list of books to purchase
 
-(HEROKU)[link]
 [HEROKU DEPLOYMENT](https://warm-island-51487-710dfd33495b.herokuapp.com/)
 
 
